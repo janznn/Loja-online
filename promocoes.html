@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoções</title>
+    <style>
+        @font-face {
+            font-family: "jan";
+            src: url("covector.otf") format("opentype");
+        }
+        header {
+            background-color: #2980b9;
+            color: black;
+            font-family: "jan";
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            display: inline-block;
+            width: 300px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+            font-family: "jan";
+        }
+
+        .product p {
+            margin: 10px 0;
+            color: #888;
+            font-family: "jan";
+        }
+
+        #cart {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .my-button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar o mouse sobre o botão */
+    text-decoration: none; /* Remove sublinhado de texto se usado como link */
+    font-family: "jan";
+}
+
+/* Estilo de foco para o botão */
+.my-button:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 5px #007bff; /* Adiciona uma sombra ao redor do botão em foco */
+}
+
+/* Estilo de hover para o botão */
+.my-button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+.animated-image-container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            display: inline-block;
+}
+.animated-image {
+            width: 200px;
+            height: 200px;
+            animation: moveImage 2s infinite alternate;
+        }
+        @keyframes moveImage {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.cN4ZDMm2Su9Ie9JRHXFzaQHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7" alt="vapor max 360">
+        <h3>vapor max 360</h3>
+        <p>R$ 380,00</p>
+        <button class="my-button" onclick="addToCart('vapor max 360', 380)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.Oe0Y8R7Em3hWi0jtD_zjCgHaEK?w=266&h=180&c=7&r=0&o=5&pid=1.7" alt="nike tn plus 3">
+        <h3>nike tn plus 3</h3>
+        <p>R$ 137,99</p>
+        <button class="my-button" onclick="addToCart('nike tn plus 3', 137,99)">Adicionar ao Carrinho</button>
+    </div>
+    
+</body>
+</html>

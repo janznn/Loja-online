@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        @font-face {
+            font-family: "jan";
+            src: url("covector.otf") format("opentype");
+        }
+        body {
+            font-family: "jan";
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            font-family: "jan";
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .animated-image-container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .animated-image {
+            width: 200px;
+            height: 200px;
+            animation: moveImage 2s infinite alternate;
+        }
+        @keyframes moveImage {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(20px);
+            }
+        }
+
+        /* Estilos para a barra de pesquisa */
+        nav form {
+            margin: 10px; /* Ajuste as margens conforme necessário */
+        }
+
+        nav input[type="text"] {
+            width: 500px; /* Largura da barra de pesquisa */
+            padding: 10px; /* Espaçamento interno */
+            border: 1px solid #ccc; /* Borda */
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+
+        nav input[type="submit"] {
+            background-color: #007bff; /* Cor de fundo do botão */
+            color: #fff; /* Cor do texto do botão */
+            border: none; /* Remove a borda do botão */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+
+        /* Estilos para um botão genérico */
+.my-button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar o mouse sobre o botão */
+    text-decoration: none; /* Remove sublinhado de texto se usado como link */
+    font-family: "jan";
+}
+
+/* Estilo de foco para o botão */
+.my-button:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 5px #007bff; /* Adiciona uma sombra ao redor do botão em foco */
+}
+
+/* Estilo de hover para o botão */
+.my-button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Confira nossos produtos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <form action="#" method="get">
+                    <input type="text" name="pesquisa" placeholder="Pesquisar">
+                    <input type="submit" value="Buscar">
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.Tb8sL3215jBCwkokcJYjtAHaD4?w=292&h=180&c=7&r=0&o=5&pid=1.7" alt="Mizuno">
+        <h3>Mizuno</h3>
+        <a href="mizunos.html"><button class="my-button">Ver Mizunos</button></a>
+    </div>
+
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.N4Ek9s6614o0b8vLLpiXKgHaHa?w=200&h=200&c=7&r=0&o=5&pid=1.7" alt="Nike shox">
+        <h3>Nike shox</h3>
+        <a href="nikeshox.html"><button class="my-button">Ver Nike Shox</button></a>
+    </div>
+
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.8TZudJb0JFrs5zJNW3C4rgHaFS?w=241&h=180&c=7&r=0&o=5&pid=1.7" alt="Vapor max">
+        <h4>Vapor max</h4>
+        <a href="vapormax.html"><button class="my-button">Ver Vapor Max</button></a>
+    </div>
+
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.jQkbLXtvI5SW7qd2fGvSrwHaFS?w=226&h=180&c=7&r=0&o=5&pid=1.7" alt="Nike TN">
+        <h4>Nike TN</h4>
+        <a href="tn.html"><button class="my-button">Ver Nike TN</button></a>
+    </div>
+
+    <!-- Seção de Promoções -->
+<section class="promo">
+    <h2>Produtos Especiais</h2>
+
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.UB-BuZXDwaDsYlW5jvm-KAHaFB?w=279&h=189&c=7&r=0&o=5&pid=1.7" alt="Mizuno x Patta">
+        <h3>Mizuno x Patta</h3>
+        <p></p>
+        <a href="promo1.html"><button class="my-button">Ver Detalhes</button></a>
+    </div>
+
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.qlIrxiI9zFcya6hzwLw3ogHaHa?pid=ImgDet&w=184&h=184&c=7" alt="Mizuno x Lamborghin">
+        <h3>Mizuno x Lamborghin</h3>
+        <p></p>
+        <a href="promo2.html"><button class="my-button">Ver Detalhes</button></a>
+    </div>
+
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.o9G2TQokmx_jy3ST7KODwQHaFS?w=261&h=187&c=7&r=0&o=5&pid=1.7" alt="Nike Shox TLX Mid SP">
+        <h3>Nike Shox TLX Mid SP</h3>
+        <p></p>
+        <a href="promo2.html"><button class="my-button">Ver Detalhes</button></a>
+    </div>
+
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.7MpgBuVKCRi-Pv08u2Dl8wHaES?w=249&h=180&c=7&r=0&o=5&pid=1.7" alt="Nike Shox VC IV">
+        <h3>Nike Shox VC IV</h3>
+        <p></p>
+        <a href="promo2.html"><button class="my-button">Ver Detalhes</button></a>
+    </div>
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.UB-BuZXDwaDsYlW5jvm-KAHaFB?w=279&h=189&c=7&r=0&o=5&pid=1.7" alt="Mizuno x Patta">
+        <h3>Mizuno x Patta</h3>
+        <p></p>
+        <a href="promo1.html"><button class="my-button">Ver Detalhes</button></a>
+    </div>
+
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.qlIrxiI9zFcya6hzwLw3ogHaHa?pid=ImgDet&w=184&h=184&c=7" alt="Mizuno x Lamborghin">
+        <h3>Mizuno x Lamborghin</h3>
+        <p></p>
+        <a href="promo2.html"><button class="my-button">Ver Detalhes</button></a>
+    </div>
+
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.o9G2TQokmx_jy3ST7KODwQHaFS?w=261&h=187&c=7&r=0&o=5&pid=1.7" alt="Nike Shox TLX Mid SP">
+        <h3>Nike Shox TLX Mid SP</h3>
+        <p></p>
+        <a href="promo2.html"><button class="my-button">Ver Detalhes</button></a>
+    </div>
+
+    <div class="animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.7MpgBuVKCRi-Pv08u2Dl8wHaES?w=249&h=180&c=7&r=0&o=5&pid=1.7" alt="Nike Shox VC IV">
+        <h3>Nike Shox VC IV</h3>
+        <p></p>
+        <a href="promo2.html"><button class="my-button">Ver Detalhes</button></a>
+    </div>
+</section>
+
+</body>
+</html>

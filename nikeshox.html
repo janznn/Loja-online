@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nike shox</title>
+    <style>
+        @font-face {
+            font-family: "jan";
+            src: url("covector.otf") format("opentype");
+        }
+        header {
+            background-color: #2980b9;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            font-family: "jan";
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            display: inline-block;
+            width: 300px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+            font-family: "jan";
+        }
+
+        .product p {
+            margin: 10px 0;
+            color: #888;
+            font-family: "jan";
+        }
+        #cart {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .my-button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar o mouse sobre o botão */
+    text-decoration: none; /* Remove sublinhado de texto se usado como link */
+    font-family: "jan";
+}
+
+/* Estilo de foco para o botão */
+.my-button:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 5px #007bff; /* Adiciona uma sombra ao redor do botão em foco */
+}
+
+/* Estilo de hover para o botão */
+.my-button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+.animated-image-container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+.animated-image {
+            width: 200px;
+            height: 200px;
+            animation: moveImage 2s infinite alternate;
+        }
+        @keyframes moveImage {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(20px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nikeshox disponiveis</h1>
+    </header>
+    <div class="product animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.zfWqnQEIIaHBmOax2XmyMgHaHa?w=189&h=189&c=7&r=0&o=5&pid=1.7" alt="12 Molas camaleão">
+        <h3>12 Molas camaleão</h3>
+        <p>R$ 200,00</p>
+        <button class="my-button" onclick="addToCart('12 Molas camaleão', 200)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.EUH-KyAWG0OJUdlWgHsAcgAAAA?w=251&h=180&c=7&r=0&o=5&pid=1.7" alt="4 Molas">
+        <h3>4 molas</h3>
+        <p>R$ 279,00</p>
+        <button class="my-button" onclick="addToCart('4 molas', 279)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.PuBWsiBDSweDu-zW7ntraAHaHa?w=186&h=186&c=7&r=0&o=5&pid=1.7" alt="Nike shox r4">
+        <h3>Nike shox r4</h3>
+        <p>R$ 700,00</p>
+        <button class="my-button" onclick="addToCart('Nike shox r4', 700)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.kg7YU800gIeOHSI5MBdgZgHaHa?w=181&h=181&c=7&r=0&o=5&pid=1.7" alt="Nike shox nz">
+        <h3>Nike shox nz</h3>
+        <p>R$ 199,99</p>
+        <button class="my-button" onclick="addToCart('Nike shox nz', 199,99)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.coL5p7IBkuJuDHNGox-G6QHaEK?w=270&h=180&c=7&r=0&o=5&pid=1.7" alt="Nike shox Supreme">
+        <h3>Nike shox Supreme</h3>
+        <p>R$ 1.599,90</p>
+        <button class="my-button" onclick="addToCart('Nike shox Supreme', 1599,90)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product animated-image-container">
+        <img class="animated-image" src="https://th.bing.com/th/id/OIP.DbOXcRC4kq4l2dLAiSIy1wAAAA?w=269&h=202&c=7&r=0&o=5&pid=1.7" alt="Nike Shox Superfly">
+        <h3>Nike Shox Superfly</h3>
+        <p>R$ 1.599,99</p>
+        <button class="my-button" onclick="addToCart('Nike Shox Superfly', 1599,99)">Adicionar ao Carrinho</button>
+    </div>
+    <div id="cart">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="cart-total">R$ 0,00</span></p>
+    </div>
+
+    <script>
+        let cartItems = [];
+        let cartTotal = 0;
+
+        function addToCart(itemName, itemPrice) {
+            cartItems.push({ name: itemName, price: itemPrice });
+            cartTotal += itemPrice;
+
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItemsElement = document.getElementById('cart-items');
+            const cartTotalElement = document.getElementById('cart-total');
+
+            cartItemsElement.innerHTML = '';
+            cartTotalElement.textContent = `R$ ${cartTotal.toFixed(2)}`;
+
+            cartItems.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - R$ ${item.price.toFixed(2)}`;
+                cartItemsElement.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
